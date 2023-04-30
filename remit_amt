@@ -1,0 +1,9 @@
+Sub REMIT_AMT()
+Dim rowNum As Long
+Dim loan As Long
+Row =2
+rowNum=Cells(Rows.Count,1).End(xlUp).Row
+while Row<rowNum
+loan=Worksheets("清單").Cells(Row,9)
+If loan<=4000000 Then
+Worksheets("清單").Cells(Row,5)=30
